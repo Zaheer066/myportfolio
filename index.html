@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultra Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <span>Ultra</span>
+    </div>
+
+     <!-- Dark Mode Toggle Button -->
+     <button id="dark-mode-toggle" class="dark-mode-btn">
+      <img src="Images/Dark mode.png" alt="Dark Mode Icon" />
+  </button>
+  </header>
+
+ <!-- Home Section -->
+<section id="home" class="section">
+  <div class="home-content">
+    <img src="Images/Profile pic.png" alt="Profile Image" class="profile-img">
+    <h1>Harold Vonn A. Ultra</h1>
+    <p>Web Developer<br>
+      Photographer
+    </p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/Vonnzxc" target="_blank">
+        <img src="Images/Facebook.png" alt="Facebook" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/vonnnnnn_u/" target="_blank">
+        <img src="Images/Instagram.png" alt="Instagram" class="social-icon">
+      </a>
+    </div>
+
+    <!-- View My Projects Button -->
+    <a href="#projects" class="btn-view-projects">View My Projects</a>
+  </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about" class="section about-section">
+  <h2>About Me</h2>
+  <div class="about-content">
+    <!-- Wrapper div for the image and shadow -->
+    <div class="image-shadow-wrapper">
+      <img src="Images/about pic.jpg" alt="Profile Image" class="about-img">
+    </div>
+    <div class="about-text">
+      <p>"Hello! I’m a passionate gamer with a keen eye for design and a drive to build engaging digital experiences. Currently, I’m working towards becoming a skilled web developer and UI designer. With hands-on experience in photography and graphic design, I bring a creative approach to everything I work on. I’m always looking to learn and explore new ways to craft visually compelling and user-friendly interfaces. Let's create something amazing together!"</p>
+      <!-- Contact Me Button -->
+      <a href="#contact" class="contact-btn">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- New Stats Section -->
+<section id="stats" class="section stats-section">
+  <div class="stats">
+    <div class="stat-item">
+      <span class="stat-value">1.2+</span> Experience
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">8+</span> Projects
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">1+</span> Company
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-item">
+      <img src="Images/WD BLUE.png" alt="Web Development Icon" class="skill-icon">
+      <span>Web Development</span>
+    </div>
+    <div class="skill-item">
+      <img src="Images/GD BLUE.png" alt="Graphic Design Icon" class="skill-icon">
+      <span>Graphic Design</span>
+    </div>
+    <div class="skill-item">
+      <img src="Images/PG BLUE.png" alt="Photography Icon" class="skill-icon">
+      <span>Photography</span>
+    </div>
+    <div class="skill-item">
+      <img src="Images/GAMING BLUE.png" alt="Gaming Icon" class="skill-icon">
+      <span>Gaming</span>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+      <div class="project-item">
+        <div class="project-image-slider">
+          <img src="Aether Resides/Login Page.jpg" alt="Aether Resides Image 1">
+          <img src="Aether Resides/Loading Screen.jpg" alt="Aether Resides Image 2">
+          <img src="Aether Resides/Landing Page.jpg" alt="Aether Resides Image 3">
+      </div>
+          <p>Aether Resides</p>
+          <p class="project-description">A booking system application for Hotels and Staycations.</p>
+          <button class="view-btn" onclick="openLightbox(this)">View</button>
+      </div>
+      <div class="project-item">
+        <div class="project-image-slider">
+          <img src="Batang Kalye/Product.jpg" alt="Batang Kalye Image 1">
+          <img src="Batang Kalye/History.jpg" alt="Batang Kalye Image 2">
+          <img src="Batang Kalye/Account.jpg" alt="Batang Kalye Image 3">
+      </div>
+          <p>Batang Kalye: Hoop X</p>
+          <p class="project-description">An E-commerce system for Batang Kalye: Hoop X store</p>
+          <button class="view-btn" onclick="openLightbox(this)">View</button>
+      </div>
+      <div class="project-item">
+          <div class="project-image-slider">
+            <img src="Quinqiware/Home.jpg" alt="Quinqiware Image 1">
+            <img src="Quinqiware/About.jpg" alt="Quinqiware Image 2">
+            <img src="Quinqiware/Team.jpg" alt="Quinqiware Image 3">
+        </div>
+          <p>Quinqueware</p>
+          <p class="project-description">Website of an IT Company</p>
+          <button class="view-btn" onclick="openLightbox(this)">View</button>
+      </div>
+      <div class="project-item">
+        <div class="project-image-slider">
+          <img src="Portrait/Portrait.jpg" alt="Portrait Image 1">
+          <img src="Portrait/Portrait 2.jpg" alt="Portrait Image 2">
+          <img src="Portrait/Boruto.jpg" alt="Portrait Image 3">
+      </div>
+          <p>Portrait / Editing / Graphic Design</p>
+          <p class="project-description">Taking photo and editing for events, and creating digital arts.</p>
+          <button class="view-btn" onclick="openLightbox(this)">View</button>
+      </div>
+  </div>
+</section>
+
+<!-- Lightbox Container -->
+<div id="lightbox" class="lightbox">
+  <span class="close-btn" onclick="closeLightbox()">&times;</span>
+  <div class="lightbox-content">
+    <img id="lightbox-image" src="" alt="Project Image">
+    <button class="prev-btn" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next-btn" onclick="changeImage(1)">&#10095;</button>
+  </div>
+</div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <div class="contact-form-container">
+      <form id="contact--form" class="contact__form">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+
+        <p class = "contact__message" id="contact-nessage"></p>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  
+
+  <nav class="bottom-nav">
+    <a href="#home" class="nav-item">
+      <img src="nav icons/HOME BLUE.png" alt="Home">
+    </a>
+    <a href="#about" class="nav-item">
+      <img src="nav icons/ABOUT BLUE.png" alt="About Me">
+    </a>
+    <a href="#skills" class="nav-item">
+      <img src="nav icons/SKILLS BLUE.png" alt="Skills">
+    </a>
+    <a href="#projects" class="nav-item">
+      <img src="nav icons/PROJECTS BLUE.png" alt="Projects">
+    </a>
+    <a href="#contact" class="nav-item">
+      <img src="nav icons/CONTACT BLUE.png" alt="Contact">
+    </a>
+  </nav>
+
+  <script src="script.js"></script>
+
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>Email: <a href="mailto:bc.haroldvonn.ultra@cvsu.edu.ph">bc.haroldvonn.ultra@cvsu.edu.ph</a></p>
+    <p>Phone: <a href="tel:+639772536556">+639772536556</a></p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/Vonnzxc?mibextid=ZbWKwL" target="_blank">
+        <img src="Images/Facebook.png" alt="Facebook" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/u_vonnn/profilecard/?igsh=MWJ4cHFoaXV0cHR1bw==" target="_blank">
+        <img src="Images/Instagram.png" alt="Instagram" class="social-icon">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!--EMAIL JS-->
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+</body>
+</html>
